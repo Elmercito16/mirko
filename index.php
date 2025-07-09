@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 
 $host = "34.55.150.77"; 
 $user = "root"; 
-$database = "uns";
+$database = "examen";
 $password = "";
 $conexion = mysqli_connect($host, $user, "", $database);
 
