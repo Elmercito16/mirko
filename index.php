@@ -2,19 +2,17 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$host = "34.55.150.77"; 
+$host = "34.123.20.8"; 
 $user = "root"; 
-$password = ""; 
+$password = "123456"; 
 $database = "examen";
 
-// Conexión a la base de datos
 $conexion = mysqli_connect($host, $user, $password, $database);
 
 if (!$conexion) {
   die("Error de conexión: " . mysqli_connect_error());
 }
 
-// Consulta SQL
 $consulta = "SELECT 
     p.nombre,
     p.hijos,
