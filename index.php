@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$host = "34.123.20.8"; 
+$host = "34.16.44.117"; 
 $user = "root"; 
 $password = "123456"; 
 $database = "examen";
