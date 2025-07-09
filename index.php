@@ -16,7 +16,7 @@ if (!$conexion) {
 $consulta = "SELECT 
     p.nombre,
     p.hijos,
-    p.correo,
+    p.edad,
     p.fecha_nacimiento,
     o.descripcion AS origen,
     p.telefonos
@@ -29,7 +29,7 @@ $resultado = mysqli_query($conexion, $consulta);
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>DATOS PERSONALES DE ELMER TRUJILLO</title>
+  <title>DATOS PERSONALES DE PACIENTES</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -37,7 +37,7 @@ $resultado = mysqli_query($conexion, $consulta);
 </head>
 <body>
   <div class="container mt-5">
-    <h1 class="display-4 text-center">DATOS DE ELMER TRUJILLO</h1>
+    <h1 class="display-4 text-center">DATOS DE PACIENTES</h1>
     <hr>
 
     <?php
