@@ -16,13 +16,12 @@ if (!$conexion) {
 $consulta = "SELECT 
     p.nombre,
     p.edad,
-    p.correo,
     p.fecha_nacimiento,
     o.descripcion AS origen,
-    p.telefonos
+    p.telefono_movil,
+    p.telefono_fijo
   FROM Persona p
   JOIN Origen o ON p.id_origen = o.id_origen";
-
 $resultado = mysqli_query($conexion, $consulta);
 ?>
 <!DOCTYPE html>
@@ -48,10 +47,10 @@ $resultado = mysqli_query($conexion, $consulta);
           <tr>
             <th>Nombre</th>
             <th>edad</th>
-            <th>Correo</th>
             <th>Fecha de Nacimiento</th>
             <th>Origen</th>
-            <th>Teléfonos</th>
+            <th>Teléfono Movil</th>
+            <th>Teléfono Fijo</th>
           </tr>
         </thead>
         <tbody>";
@@ -62,9 +61,9 @@ $resultado = mysqli_query($conexion, $consulta);
             <td>{$fila['nombre']}</td>
             <td>{$fila['edad']}</td>
             <td>{$fila['correo']}</td>
-            <td>{$fila['fecha_nacimiento']}</td>
             <td>{$fila['origen']}</td>
-            <td>{$fila['telefonos']}</td>
+            <td>{$fila['telefono_movil']}</td>
+            <td>{$fila['telefono_fijo']}</td>
           </tr>";
       }
 
