@@ -60,7 +60,7 @@ $resultado = mysqli_query($conexion, $consulta);
           <tr>
             <td>{$fila['nombre']}</td>
             <td>{$fila['edad']}</td>
-            <td>{$fila['correo']}</td>
+            <td>{$fila['fecha_nacimiento']}</td>
             <td>{$fila['origen']}</td>
             <td>{$fila['telefono_movil']}</td>
             <td>{$fila['telefono_fijo']}</td>
