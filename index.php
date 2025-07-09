@@ -47,7 +47,7 @@ $resultado = mysqli_query($conexion, $consulta);
         <thead class='thead-dark'>
           <tr>
             <th>Nombre</th>
-            <th>Hijos</th>
+            <th>edad</th>
             <th>Correo</th>
             <th>Fecha de Nacimiento</th>
             <th>Origen</th>
@@ -60,7 +60,7 @@ $resultado = mysqli_query($conexion, $consulta);
         echo "
           <tr>
             <td>{$fila['nombre']}</td>
-            <td>{$fila['hijos']}</td>
+            <td>{$fila['edad']}</td>
             <td>{$fila['correo']}</td>
             <td>{$fila['fecha_nacimiento']}</td>
             <td>{$fila['origen']}</td>
