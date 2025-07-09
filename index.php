@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$host = "34.16.44.117"; 
+$host = "104.198.137.237"; 
 $user = "root"; 
 $password = "123456"; 
 $database = "examen";
@@ -15,8 +15,8 @@ if (!$conexion) {
 
 $consulta = "SELECT 
     p.nombre,
-    p.hijos,
     p.edad,
+    p.correo,
     p.fecha_nacimiento,
     o.descripcion AS origen,
     p.telefonos
@@ -29,7 +29,7 @@ $resultado = mysqli_query($conexion, $consulta);
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>DATOS PERSONALES DE PACIENTES</title>
+  <title>DATOS PERSONALES DE TRUJILLO PINEDA ELMER</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -37,7 +37,7 @@ $resultado = mysqli_query($conexion, $consulta);
 </head>
 <body>
   <div class="container mt-5">
-    <h1 class="display-4 text-center">DATOS DE PACIENTES</h1>
+    <h1 class="display-4 text-center">DATOS PERSONALES DE TRUJILLO PINEDA</h1>
     <hr>
 
     <?php
