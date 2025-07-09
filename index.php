@@ -21,7 +21,8 @@ $consulta = "SELECT
     p.telefono_movil,
     p.telefono_fijo
   FROM Persona p
-  JOIN Origen o ON p.id_origen = o.id_origen";
+  JOIN Origen o ON p.id_origen = o.id_origen
+  WHERE LEFT(p.nombre, 1) NOT IN ('A', 'E', 'I', 'O', 'U')";
 $resultado = mysqli_query($conexion, $consulta);
 ?>
 <!DOCTYPE html>
